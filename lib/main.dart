@@ -31,8 +31,8 @@ class _IndexpageState extends State<Indexpage> {
   int _bottomNavbar = 0;
 
   final List<Widget> _pages = const [
-    Homepage(),
-    Searchpage(),
+    HomePage(),
+    SearchPage(),
     Settingpage(),
     Accountpage(),
   ];

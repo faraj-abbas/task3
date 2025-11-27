@@ -1,17 +1,70 @@
 import 'package:flutter/material.dart';
 
-class Searchpage extends StatelessWidget {
-  const Searchpage({super.key});
+class SearchPage extends StatelessWidget {
+  const SearchPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: const [
-          Icon(Icons.search, size: 30, color: const Color.fromARGB(255, 219, 127, 57)),
-          SizedBox(height: 20),
-          Text('البحث', style: TextStyle(fontSize: 24, color: const Color.fromARGB(255, 219, 127, 57))),
+    return Scaffold(
+      body: ListView(
+        padding: const EdgeInsets.all(12.0),
+        children: [
+          ListTile(
+            title: const Text(
+              "الأخبار",
+              textAlign: TextAlign.right,
+            ),
+            leading: const Icon(Icons.arrow_back_ios), // السهم مناسب للعربية
+            onTap: () {},
+          ),
+          ListTile(
+            title: const Text(
+              "المكتبة",
+              textAlign: TextAlign.right,
+            ),
+            leading: const Icon(Icons.arrow_back_ios),
+            onTap: () {},
+          ),
+          ListTile(
+            title: const Text(
+              "الأصدقاء",
+              textAlign: TextAlign.right,
+            ),
+            leading: const Icon(Icons.arrow_back_ios),
+            onTap: () {},
+          ),
+          ListTile(
+            title: const Text(
+              "الفعاليات",
+              textAlign: TextAlign.right,
+            ),
+            leading: const Icon(Icons.arrow_back_ios),
+            onTap: () {},
+          ),
+          ListTile(
+            title: const Text(
+              "المفضلة",
+              textAlign: TextAlign.right,
+            ),
+            leading: const Icon(Icons.arrow_back_ios),
+            onTap: () {},
+          ),
+          ListTile(
+            title: const Text(
+              "الإحصائيات",
+              textAlign: TextAlign.right,
+            ),
+            leading: const Icon(Icons.arrow_back_ios),
+            onTap: () {},
+          ),
+          ListTile(
+            title: const Text(
+              "التقويم",
+              textAlign: TextAlign.right,
+            ),
+            leading: const Icon(Icons.arrow_back_ios),
+            onTap: () {},
+          ),
         ],
       ),
     );
